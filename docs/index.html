@@ -4,23 +4,22 @@
 	<meta charset="UTF-8">
 	<title>Marianela Gaia | Portfolio</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-
 	<!-- Normalizar estilos -->
   	<link rel="stylesheet" href="css/normalize.css">
   	<!-- Framework Bootstrap -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  	<!-- Mi hoja de estilo -->
+	<!-- Mi script -->
+	<link rel="stylesheet" href="css/script.js">
+	<!-- Mi hoja de estilo -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container-fluid">
 			<a class="navbar-brand d-inline-block" href="#">
-				<img src=https://via.placeholder.com/35 alt="" class="d-inline-block align-top rounded-circle px-3">
-				<h6 class="d-inline-block">Marianela Gaia</h6>
-				<h6 class="d-inline-block"><small class="text-muted">| Front End Developer</small></h6>
+				<img src=https://via.placeholder.com/35 alt="" class="d-inline-block px-3 align-top rounded-circle">
+				<h6 class="d-inline-block">Marianela Gaia<small class="text-muted">| Front End Developer</small></h6>
 			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -39,7 +38,7 @@
 						<a class="nav-link" aria-current="page" href="#">Home</a>
 				  	</li>
 				  	<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="#">About me</a>
+						<a class="nav-link" aria-current="page" href="#aboutme">About me</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">Blog</a>
@@ -48,15 +47,15 @@
 						<a class="nav-link" href="#">Contact</a>
 				  	</li>
 				</ul>
-				<form>
-				  <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-				</form>
+				<!--<form>
+					<input class="form-control" type="text" placeholder="Search" aria-label="Search">
+				</form> -->
 			</div> <!-- nav-bar/ collapse -->
 		</div> <!-- div/ container-fluid -->
 	</nav>
 	
 	<header class="bg-light text-dark">
-		<div class="container py-5 text-start">
+		<div class="container-fluid py-5 text-center">
 			<div class="row py-lg-5">
 				<div class="col-lg-6 col-md-8 mx-auto">
 					<h1 class="fw-light"><strong>Marianela Gaia</strong></h1>
@@ -69,110 +68,237 @@
 						<a href="#"><i class="bi bi-twitter"></i></a>
 					</p>
 					<p class="py-1">
-						<a href="#" class="btn btn-primary my-2 mx-2 mx-auto rounded-pill border-2">Hire me</a>
-						<a href="#" class="btn btn-secondary my-2 mx-2 mx-auto rounded-pill border-2">See my resume</a>
+						<button type="button" class="btn btn-dark py-2 my-0 mx-auto rounded-pill border-2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Hire me</button>
+						<!-- <a href="#" class="btn btn-dark py-1 my-2 mx-auto rounded-pill border-2">Hire me</a>
+						<a href="#" class="btn btn-outline-dark py-1 my-2 mx-auto rounded-pill border-2">See my resume</a>-->
 					</p>
 				</div>
 				<div class="col-lg-6 col-md-8 mx-auto">
-					<img src=https://via.placeholder.com/300 alt="" class="d-inline-block align-top px-3">
+					<img src=https://via.placeholder.com/300 alt="" class="d-inline-block img-fluid align-top px-3">
 				</div>
 			</div>
 		</div>
 	</header>
 
-	<main>
-		<div class="album py-5 bg-light">
-			<div class="container">
-				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-					<div-col>
-						<div class="card shadow-sm">
-							<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-						</div>
+	<main class="bg-light">
+		<div class="container-fluid py-3">
+			<div class="card-header mb-3 py-3">
+				<ul class="nav nav-tabs card-header-tabs">
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="true" href="#">Active</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+				  </li>
+				</ul>
+			</div>
+			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+				<div class="col">
+					<div class="card">
+						<img src="..." class="card-img-top" alt="...">
 						<div class="card-body">
-							<h3 class="card-text">Category</h3>
-							<p class="card-text">Project title</p>
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<a href="#" class="btn btn-dark">Go somewhere</a>
 						</div>
 					</div>
-					<div-col>
-						<div class="card shadow-sm">
-							<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-						</div>
+				</div>
+				<div class="col">
+					<div class="card">
+						<img src="..." class="card-img-top" alt="...">
 						<div class="card-body">
-							<h3 class="card-text">Category</h3>
-							<p class="card-text">Project title</p>
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<a href="#" class="btn btn-dark">Go somewhere</a>
 						</div>
 					</div>
-					<div-col>
-						<div class="card shadow-sm">
-							<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-						</div>
+				</div>
+				<div class="col">
+					<div class="card">
+						<img src="..." class="card-img-top" alt="...">
 						<div class="card-body">
-							<h3 class="card-text">Category</h3>
-							<p class="card-text">Project title</p>
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+							<a href="#" class="btn btn-dark">Go somewhere</a>
 						</div>
 					</div>
-					<div-col>
-						<div class="card shadow-sm">
-							<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-						</div>
+				</div>
+				<div class="col">
+					<div class="card">
+						<img src="..." class="card-img-top" alt="...">
 						<div class="card-body">
-							<h3 class="card-text">Category</h3>
-							<p class="card-text">Project title</p>
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<a href="#" class="btn btn-dark">Go somewhere</a>
 						</div>
 					</div>
-					<div-col>
-						<div class="card shadow-sm">
-							<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-						</div>
+				</div>
+				<div class="col">
+					<div class="card">
+						<img src="..." class="card-img-top" alt="...">
 						<div class="card-body">
-							<h3 class="card-text">Category</h3>
-							<p class="card-text">Project title</p>
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<a href="#" class="btn btn-dark">Go somewhere</a>
 						</div>
 					</div>
-					<div-col>
-						<div class="card shadow-sm">
-							<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-						</div>
+				</div>
+				<div class="col">
+					<div class="card">
+						<img src="..." class="card-img-top" alt="...">
 						<div class="card-body">
-							<h3 class="card-text">Category</h3>
-							<p class="card-text">Project title</p>
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<a href="#" class="btn btn-dark">Go somewhere</a>
 						</div>
 					</div>
-					<div-col>
-						<div class="card shadow-sm">
-							<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-						</div>
+				</div>
+				<div class="col">
+					<div class="card">
+						<img src="..." class="card-img-top" alt="...">
 						<div class="card-body">
-							<h3 class="card-text">Category</h3>
-							<p class="card-text">Project title</p>
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<a href="#" class="btn btn-dark">Go somewhere</a>
 						</div>
 					</div>
-					<div-col>
-						<div class="card shadow-sm">
-							<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-						</div>
+				</div>
+				<div class="col">
+					<div class="card">
+						<img src="..." class="card-img-top" alt="...">
 						<div class="card-body">
-							<h3 class="card-text">Category</h3>
-							<p class="card-text">Project title</p>
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<a href="#" class="btn btn-dark">Go somewhere</a>
 						</div>
 					</div>
-					<div-col>
-						<div class="card shadow-sm">
-							<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-						</div>
+				</div>
+				<div class="col">
+					<div class="card">
+						<img src="..." class="card-img-top" alt="...">
 						<div class="card-body">
-							<h3 class="card-text">Category</h3>
-							<p class="card-text">Project title</p>
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<a href="#" class="btn btn-dark">Go somewhere</a>
 						</div>
 					</div>
-				</div> <!-- div/ row -->
-			</div> <!-- div/ container -->
-		</div> <!-- div/ album -->
+				</div>
+			</div> <!-- div/ row -->
+			<div class="row">
+				<div class="d-grid gap-2 col-2 mx-auto my-3 py-3">
+					<button class="btn btn-outline-dark rounded-pill border-3" type="button">Button</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="d-grid gap-2 col-6 my-5 py-3">
+					<img src=https://via.placeholder.com/300 alt="" class="d-inline-block img-fluid mx-auto px-3">
+				</div>
+					<div class="d-grid gap-2 col-6 my-5 mx-auto py-3" id="aboutme">
+					<h2>About me</h2>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt id necessitatibus mollitia earum a repudiandae, repellat quidem ducimus dicta aliquid at cum voluptates vero enim? Iste molestiae possimus quisquam aperiam!</p>
+					<p class="py-3">
+						<!--<a href="#" class="btn btn-dark py-2 my-0 mx-auto rounded-pill border-2">Hire me</a>
+						<a href="#" class="btn btn-outline-dark py-2 my-0 mx-auto rounded-pill border-2">See my resume</a>-->
+						<button type="button" class="btn btn-dark py-2 my-0 mx-auto rounded-pill border-2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Hire me</button>
+					</p>
+				</div>
+			</div>
+		</div> <!-- div/ container -->
 	</main>
+	<div id="mycarousel" class="carousel slide" data-bs-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-bs-target="#mycarousel" data-bs-slide-to="0" class="active"></li>
+			<li data-bs-target="#mycarousel" data-bs-slide-to="1"></li>
+			<li data-bs-target="#mycarousel" data-bs-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src=https://via.placeholder.com/300 class="d-inline-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+				<h5>First slide label</h5>
+				<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src=https://via.placeholder.com/300 class="d-inline-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+				<h5>Second slide label</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src=https://via.placeholder.com/300 class="d-inline-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+				<h5>Third slide label</h5>
+				<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+				</div>
+		  	</div>
+		</div>
+		<a class="carousel-control-prev" href="#mycarousel" role="button" data-bs-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#mycarousel" role="button" data-bs-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Next</span>
+		</a>
+	</div>
 
+	<section>
 
+	</section>
+	<footer class="bg-dark text-center text-lg-start">
+				<!-- Copyright -->
+				<div class="text-white p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+				© 2020 Copyright |
+					<a class="text-white text-decoration-none fs-6" href="https://mdbootstrap.com/">m-gaia.com</a>
+					<a href="#"><i class="bi bi-github"></i></a>
+					<a href="#"><i class="bi bi-linkedin"></i></a>
+					<a href="#"><i class="bi bi-facebook"></i></a>
+					<a href="#"><i class="bi bi-instagram"></i></a>
+					<a href="#"><i class="bi bi-twitter"></i></a>
+				</div>
+				<!-- Copyright -->
+				<div class="col-6">
+					
+				</div>
+			</div>
+		</div>
+	</footer>
 
- 
+<!-- VENTANAS MODALES -->
+<!-- Hire me -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- See my resume -->
 
 
 
