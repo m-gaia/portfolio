@@ -69,6 +69,7 @@
 					</p>
 					<p class="py-1">
 						<button type="button" class="btn btn-dark py-2 my-0 mx-auto rounded-pill border-2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Hire me</button>
+						<button type="button" class="btn btn-dark py-2 my-0 mx-auto rounded-pill border-2" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">See my resume</button>
 						<!-- <a href="#" class="btn btn-dark py-1 my-2 mx-auto rounded-pill border-2">Hire me</a>
 						<a href="#" class="btn btn-outline-dark py-1 my-2 mx-auto rounded-pill border-2">See my resume</a>-->
 					</p>
@@ -203,6 +204,7 @@
 						<!--<a href="#" class="btn btn-dark py-2 my-0 mx-auto rounded-pill border-2">Hire me</a>
 						<a href="#" class="btn btn-outline-dark py-2 my-0 mx-auto rounded-pill border-2">See my resume</a>-->
 						<button type="button" class="btn btn-dark py-2 my-0 mx-auto rounded-pill border-2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Hire me</button>
+						<button type="button" class="btn btn-dark py-2 my-0 mx-auto rounded-pill border-2" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">See my resume</button>
 					</p>
 				</div>
 			</div>
@@ -273,33 +275,48 @@
 <!-- Hire me -->
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Recipient:</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-          <div class="mb-3">
-            <label for="message-text" class="col-form-label">Message:</label>
-            <textarea class="form-control" id="message-text"></textarea>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send message</button>
-      </div>
-    </div>
-  </div>
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">New message</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form>
+				<div class="mb-3">
+					<label for="recipient-name" class="col-form-label">Recipient:</label>
+					<input type="text" class="form-control" id="recipient-name">
+				</div>
+				<div class="mb-3">
+					<label for="message-text" class="col-form-label">Message:</label>
+					<textarea class="form-control" id="message-text"></textarea>
+				</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Send message</button>
+			</div>
+		</div>
+	</div>
 </div>
 <!-- See my resume -->
-
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-modal="true">
+	<div class="modal-dialog modal-dialog-centered">
+	  	<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalCenterTitle">Titulo modal</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente in quaerat earum dignissimos quae quo reprehenderit, velit quos, provident ea alias sequi voluptatibus magni quam nulla facilis quibusdam veniam rem!</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			</div>
+	  	</div>
+	</div>
+</div>
 
 
 
