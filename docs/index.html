@@ -11,6 +11,8 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 	<!-- Mi script -->
 	<link rel="stylesheet" href="css/script.js">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
 	<!-- Mi hoja de estilo -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -18,7 +20,7 @@
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container-fluid">
 			<a class="navbar-brand d-inline-block" href="#">
-				<img src=https://via.placeholder.com/35 alt="" class="d-inline-block align-top rounded-circle">
+				<img src=https://via.placeholder.com/35 alt="logo" width="35" class="d-inline-block align-top rounded-circle">
 				<h6 class="d-inline-block">Marianela Gaia<small class="text-muted">| Front-End</small></h6>
 			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,17 +29,9 @@
 			<div class="collapse navbar-collapse" id="navbarsExample05">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase">
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown" aria-expanded="false">Work</a>
-						<ul class="dropdown-menu" aria-labelledby="dropdown05">
-							<li><a class="dropdown-item" href="#">Action</a></li>
-							<li><a class="dropdown-item" href="#">Another action</a></li>
-							<li><a class="dropdown-item" href="#">Something else here</a></li>
-						</ul>
+						<a class="nav-link" aria-current="page" href="#work">Work</a>
 				  	</li>
-					<li class="nav-item active">
-						<a class="nav-link" aria-current="page" href="#">Home</a>
-				  	</li>
-				  	<li class="nav-item">
+				  	<li class="nav-item active">
 						<a class="nav-link" aria-current="page" href="#aboutme">About me</a>
 					</li>
 					<li class="nav-item">
@@ -55,10 +49,10 @@
 		</div> <!-- div/ container-fluid -->
 	</nav>
 	
-	<header class="bg-light text-dark">
+	<header class="text-dark">
 		<div class="container-fluid py-5 text-center">
-			<div class="row py-lg-5">
-				<div class="col-lg-6 col-md-8 mx-auto">
+			<div class="row py-lg-4">
+				<div class="col-lg-6 col-md-8 py-lg-3 mx-auto">
 					<h1 class="fw-light"><strong>Marianela Gaia</strong></h1>
 					<h2 class="lead fw-light text-muted py-2">Front End Developer</h2>
 					<p class="py-3">
@@ -76,93 +70,93 @@
 					</p>
 				</div>
 				<div class="col-lg-6 col-md-8 mx-auto">
-					<img src=https://via.placeholder.com/300 alt="" class="d-inline-block img-fluid align-top px-3">
+					<img src="img/Captura5.PNG" alt="" class="d-inline-block img-fluid w-100 px-3">
 				</div>
 			</div>
 		</div>
 	</header>
 
-	<main class="bg-light fw-light">
+	<main class="fw-light">
 		<div class="container-fluid py-3">
-			<div class="card-header mb-3 py-3">
-				<ul class="nav nav-tabs card-header-tabs">
+			<div class="card-header mb-3 py-2 bg-dark" id="work">
+				<ul class="nav nav-tabs card-header-tabs mb-1">
 				  <li class="nav-item">
-					<a class="nav-link btn active" type="button">All</a>
+					<a class="nav-link btn active text-dark" type="button">All</a>
 				  </li>
 				  <li class="nav-item">
-					<a class="nav-link btn" type="button">Website</a>
+					<a class="nav-link btn text-white" type="button">Website</a>
 				  </li>
 				  <li class="nav-item">
-					<a class="nav-link btn" type="button">App</a>
+					<a class="nav-link btn text-white" type="button">App</a>
 				  </li>
 				</ul>
 			</div>
-			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 mx-auto g-4">
+			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 mx-auto g-4 py-3">
 				<div class="col">
-					<div class="card h-100 bg-light rounded-3 border-3">
+					<div class="card h-100 bg-light rounded-3 border-1">
 						<img src="img/arte-web.PNG" class="card-img-top mx-auto d-block py-2 w-75 rounded-3 border-white" alt="art-web">
-						<div class="card-header bg-dark text-white text-uppercase">Website</div>
+						<div class="card-header bg-secondary text-white text-uppercase">Website</div>
 						<div class="card-body">
 							<h5 class="card-title">Art</h5>
 						</div>
 					</div>
 				</div>
 				<div class="col">
-					<div class="card h-100 bg-light rounded-3 border-3">
+					<div class="card h-100 bg-light rounded-3 border-1">
 						<img src="img/viajes-web.PNG" class="card-img-top mx-auto d-block py-2 w-75 rounded-3 border-white" alt="travel-web">
-						<div class="card-header bg-dark text-white text-uppercase">Website</div>
+						<div class="card-header bg-secondary text-white text-uppercase">Website</div>
 						<div class="card-body">
 							<h5 class="card-title">Travel</h5>
 						</div>
 					</div>
 				</div>
 				<div class="col">
-					<div class="card h-100 bg-light rounded-3 border-3">
+					<div class="card h-100 bg-light rounded-3 border-1">
 						<img src="img/moda-web.PNG" class="card-img-top mx-auto d-block py-2 w-75 rounded-3 border-white" alt="fashion-web">
-						<div class="card-header bg-dark text-white text-uppercase">Website</div>
+						<div class="card-header bg-secondary text-white text-uppercase">Website</div>
 						<div class="card-body">
 							<h5 class="card-title">Fashion</h5>
 						</div>
 					</div>
 				</div>
 				<div class="col">
-					<div class="card h-100 bg-light rounded-3 border-3">
+					<div class="card h-100 bg-light rounded-3 border-1">
 						<img src="img/cafe-web.PNG" class="card-img-top mx-auto d-block py-2 w-75 rounded-3 border-white" alt="cafe-web">
-						<div class="card-header bg-dark text-white text-uppercase">Website</div>
+						<div class="card-header bg-secondary text-white text-uppercase">Website</div>
 						<div class="card-body">
 							<h5 class="card-title">Cafe</h5>
 						</div>
 					</div>
 				</div>
 				<div class="col">
-					<div class="card h-100 bg-light rounded-3 border-3">
+					<div class="card h-100 bg-light rounded-3 border-1">
 						<img src="img/blog-web.PNG" class="card-img-top mx-auto d-block py-2 w-75 rounded-3 border-white" alt="blog">
-						<div class="card-header bg-dark text-white text-uppercase">Website</div>
+						<div class="card-header bg-secondary text-white text-uppercase">Website</div>
 						<div class="card-body">
 							<h5 class="card-title">Blog</h5>
 						</div>
 					</div>
 				</div>
 				<div class="col">
-					<div class="card h-100 bg-light rounded-3 border-3">
+					<div class="card h-100 bg-light rounded-3 border-1">
 						<img src="img/tienda-web.PNG" class="card-img-top mx-auto d-block py-2 w-75 rounded-3 border-white" alt="shop-web">
-						<div class="card-header bg-dark text-white text-uppercase">Website</div>
+						<div class="card-header bg-secondary text-white text-uppercase">Website</div>
 						<div class="card-body">
 							<h5 class="card-title">Shop</h5>
 						</div>
 					</div>
 				</div>
 				<div class="col">
-					<div class="card h-100 bg-light rounded-3 border-3">
+					<div class="card h-100 bg-light rounded-3 border-1">
 						<img src="img/company-web.PNG" class="card-img-top mx-auto d-block py-2 w-75 rounded-3 border-white" alt="company-web">
-						<div class="card-header bg-dark text-white text-uppercase">Website</div>
+						<div class="card-header bg-secondary text-white text-uppercase">Website</div>
 						<div class="card-body">
 							<h5 class="card-title">Company</h5>
 						</div>
 					</div>
 				</div>
 				<div class="col">
-					<div class="card h-100 bg-light rounded-3 border-3">
+					<div class="card h-100 bg-light rounded-3 border-1">
 						<img src="img/task-app.png" class="card-img-top mx-auto d-block py-2 w-75 rounded-3 border-white" alt="task-app">
 						<div class="card-header bg-secondary text-white text-uppercase">App</div>
 						<div class="card-body">
@@ -171,7 +165,7 @@
 					</div>
 				</div>
 				<div class="col">
-					<div class="card h-100 bg-light rounded-3 border-3">
+					<div class="card h-100 bg-light rounded-3 border-1">
 						<img src="img/chat-app.png" class="card-img-top mx-auto d-block py-2 w-75 rounded-3 border-white" alt="chat-app">
 						<div class="card-header bg-secondary text-white text-uppercase">App</div>
 						<div class="card-body">
@@ -188,9 +182,9 @@
 			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 mx-auto g-4">
 				<div class="col">
 					<div class="collapse multi-collapse" id="multiCollapseOthers">
-						<div class="card h-100 bg-light rounded-3 border-3">
+						<div class="card h-100 bg-light rounded-3 border-2">
 							<img src="img/dashboard-web.PNG" class="card-img-top mx-auto d-block py-2 w-75 rounded-3 border-white" alt="dashboard-web">
-							<div class="card-header bg-dark text-white text-uppercase">Website</div>
+							<div class="card-header bg-secondary text-white text-uppercase">Website</div>
 							<div class="card-body">
 								<h5 class="card-title">Dashboard</h5>
 							</div>
@@ -199,9 +193,9 @@
 				</div>
 				<div class="col">
 					<div class="collapse multi-collapse" id="multiCollapseOthers">
-						<div class="card h-100 bg-light rounded-3 border-3">
+						<div class="card h-100 bg-light rounded-3 border-2">
 							<img src="img/buy-web.PNG" class="card-img-top mx-auto d-block py-2 w-75 rounded-3 border-white" alt="buy-landing">
-							<div class="card-header bg-dark text-white text-uppercase">Landing-page</div>
+							<div class="card-header bg-secondary text-white text-uppercase">Landing-page</div>
 							<div class="card-body">
 								<h5 class="card-title">Buy</h5>
 							</div>
@@ -210,7 +204,7 @@
 				</div>
 				<div class="col">
 					<div class="collapse multi-collapse" id="multiCollapseOthers">
-						<div class="card h-100 bg-light rounded-3 border-3">
+						<div class="card h-100 bg-light rounded-3 border-2">
 							<img src="img/maps-app.png" class="card-img-top mx-auto d-block py-2 w-75 rounded-3 border-white" alt="map-app">
 							<div class="card-header bg-secondary text-white text-uppercase">App</div>
 							<div class="card-body">
@@ -220,12 +214,11 @@
 					</div>
 				</div>
 			</div>
-		</div> <!-- div/ row -->
 		</div> <!-- div/ container -->
 		<div class="container-fluid py-3">
 			<div class="row">
 				<div class="d-grid gap-2 col-lg-6 my-3 py-3">
-					<img src=https://via.placeholder.com/300 alt="" class="d-inline-block img-fluid mx-auto px-3">
+					<img src="img/Captura6.PNG" alt="qr" class="d-inline-block img-fluid mx-auto w-75  px-3">
 				</div>
 				<div class="d-grid gap-2 col-lg-6 my-3 mx-auto py-3" id="aboutme">
 					<h2 class="text-uppercase">About me</h2>

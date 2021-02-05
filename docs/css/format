@@ -1,0 +1,37 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Styling for the navbar
+#mainNav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
+    .navbar-brand {
+        color: $white;
+    }
+    .navbar-nav {
+        margin-top: 1rem;
+        li.nav-item {
+            a.nav-link {
+                color: $white;
+                &:hover {
+                    color: $primary;
+                }
+                &:active,
+                &:focus {
+                    color: $white;
+                }
+                &.active {
+                    color: $primary;
+                }
+            }
+        }
+    }
+    .navbar-toggler {
+        font-size: 80%;
+        padding: 0.8rem;
+    }
+}
