@@ -13,41 +13,44 @@
 	<link rel="stylesheet" href="css/script.js">
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+	<!-- Favicon -->
+	<link rel="icon" type="image/x-icon" href="favicon.ico"/>
 	<!-- Mi hoja de estilo -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<div class="container-fluid">
+		<div class="row">
 			<a class="navbar-brand d-inline-block" href="#">
-				<img src=https://via.placeholder.com/35 alt="logo" width="35" class="d-inline-block align-top rounded-circle">
+				<img src="img/icon-mg.png" alt="logo" width="40" class="d-inline-block align-top rounded-circle">
 				<h6 class="d-inline-block">Marianela Gaia<small class="text-muted">| Front-End</small></h6>
 			</a>
+		</div>
+		<div class="row justify-content-right mx-1">
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarsExample05">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase">
-					<li class="nav-item dropdown">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase py-1">
+					<li class="nav-item dropdown py-1">
 						<a class="nav-link" aria-current="page" href="#work">Work</a>
-				  	</li>
-				  	<li class="nav-item active">
+					</li>
+					<li class="nav-item active py-1">
 						<a class="nav-link" aria-current="page" href="#aboutme">About me</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item py-1">
 						<a class="nav-link" href="#">Blog</a>
-				  	</li>
-				  	<li class="nav-item">
+					</li>
+					<li class="nav-item py-1">
 						<a class="nav-link" href="#">Contact</a>
 					</li>
-					<button type="button" class="btn btn-sm btn-outline-dark bg-secondary py-0 my-0 mx-auto rounded-pill border-2 text-uppercase" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"><strong>Hire me</strong></button>
 				</ul>
-				<!--<form>
-					<input class="form-control" type="text" placeholder="Search" aria-label="Search">
-				</form> -->
+				<button type="button" class="btn btn-sm btn-outline-dark bg-primary text-white py-1 my-0 mx-0 rounded-pill border-2 text-uppercase" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"><strong>Hire me</strong></button>
 			</div> <!-- nav-bar/ collapse -->
-		</div> <!-- div/ container-fluid -->
-	</nav>
+		</div> <!-- div/ row -->
+	</div> <!-- div/ container-fluid -->
+</nav>
 	
 	<header class="text-dark">
 		<div class="container-fluid py-5 text-center">
@@ -58,22 +61,19 @@
 					<p class="py-3">
 						<a href="#"><i class="bi bi-github"></i></a>
 						<a href="#"><i class="bi bi-linkedin"></i></a>
-						<a href="#"><i class="bi bi-facebook"></i></a>
 						<a href="#"><i class="bi bi-instagram"></i></a>
 						<a href="#"><i class="bi bi-twitter"></i></a>
 					</p>
 					<p class="py-2">
 						<button type="button" class="btn btn-dark py-2 my-0 mx-auto rounded-pill border-2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Hire me</button>
 						<button type="button" class="btn btn-dark py-2 my-0 mx-auto rounded-pill border-2" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">See my resume</button>
-						<!-- <a href="#" class="btn btn-dark py-1 my-2 mx-auto rounded-pill border-2">Hire me</a>
-						<a href="#" class="btn btn-outline-dark py-1 my-2 mx-auto rounded-pill border-2">See my resume</a>-->
 					</p>
 				</div>
 				<div class="col-lg-6 col-md-8 mx-auto">
 					<img src="img/Captura5.PNG" alt="" class="d-inline-block img-fluid w-100 px-3">
 				</div>
-			</div>
-		</div>
+			</div> <!-- div/ row -->
+		</div> <!-- div/ container -->
 	</header>
 
 	<main class="fw-light">
@@ -213,7 +213,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> <!-- div/ row -->
 		</div> <!-- div/ container -->
 		<div class="container-fluid py-3">
 			<div class="row">
@@ -224,13 +224,11 @@
 					<h2 class="text-uppercase">About me</h2>
 					<p class="py-3">Freelancing experience supporting a range of clients in web and graphic design, my experience in HTML5, CSS3, Bootstrap and JavaScript has prepared me to excel in this freelance capacity.</p>
 					<p class="col-sm-6 py-3">
-						<!--<a href="#" class="btn btn-dark py-2 my-0 mx-auto rounded-pill border-2">Hire me</a>
-						<a href="#" class="btn btn-outline-dark py-2 my-0 mx-auto rounded-pill border-2">See my resume</a>-->
 						<button type="button" class="btn btn-dark py-2 my-0 mx-auto rounded-pill border-2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Hire me</button>
 						<button type="button" class="btn btn-dark py-2 my-0 mx-auto rounded-pill border-2" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">See my resume</button>
 					</p>
 				</div>
-			</div>
+			</div> <!-- div/ row -->
 		</div> <!-- div/ container -->
 	</main>
 
@@ -243,23 +241,23 @@
 			</ol>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img src="https://mdbootstrap.com/img/Photos/Slides/img%20(40).jpg" class="d-block w-100" alt="...">
+					<img src="img/slider.PNG" class="d-block w-75 mx-auto" alt="...">
 					<div class="carousel-caption d-none d-md-block">
-						<h5>First slide label</h5>
+						<h5>First testimony</h5>
 						<p class="text-dark">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
 					</div>
 				</div>
 				<div class="carousel-item">
-					<img src="https://mdbootstrap.com/img/new/slides/041.jpg" class="d-block w-100" alt="...">
+					<img src="img/slider.PNG" class="d-block w-75 mx-auto" alt="...">
 					<div class="carousel-caption d-none d-md-block">
-						<h5>Second slide label</h5>
+						<h5>Second testimony</h5>
 						<p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 				</div>
 				<div class="carousel-item">
-					<img src="https://mdbootstrap.com/img/Photos/Slides/img%20(40).jpg" class="d-block w-100" alt="...">
+					<img src="img/slider.PNG" class="d-block w-75 mx-auto" alt="...">
 					<div class="carousel-caption d-none d-md-block">
-						<h5>Third slide label</h5>
+						<h5>Third testimony</h5>
 						<p class="text-dark">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
 					</div>
 				</div>
@@ -275,7 +273,7 @@
 		</div>
 	</aside>
 
-	<section class="bg-light">
+	<section class="bg-light mt-5">
 		<div class="container-fluid py-5">
 			<div class="row">
 				<div class="d-grid gap-2 col-lg-6 my-3 mx-auto" id="readme">
@@ -288,7 +286,7 @@
 					<div class="card h-100">
 						<img src="img/seo.PNG" class="card-img-top w-50 mx-auto" alt="seo">
 						<div class="card-body">
-							<h5 class="card-title">Search Engine Optimization (SEO)</h5>
+							<h5 class="card-title text-uppercase">Search Engine Optimization (SEO)</h5>
 							<p class="card-text">Search engine optimization (SEO) is the process of improving the quality and quantity of website traffic to a website or a web page from search engines.</p>
 							<a href="#" class="btn btn-secondary">Read more</a>
 						</div>
@@ -301,7 +299,7 @@
 					<div class="card h-100">
 						<img src="img/ux.png" class="card-img-top mx-auto w-50" alt="ux-design">
 						<div class="card-body">
-							<h5 class="card-title">High Fidelity (Hi-Fi) - UI/UX</h5>
+							<h5 class="card-title text-uppercase">High Fidelity (Hi-Fi) - UI/UX</h5>
 							<p class="card-text">While often times our UI/UX exploration starts with sketches or low fidelity layouts, evolving these ideas into high fidelity (hi-fi) wireframes forces us to consider all of the details required.</p>
 							<a href="#" class="btn btn-secondary">Read more</a>
 						</div>
@@ -314,7 +312,7 @@
 					<div class="card h-100">
 						<img src="img/node.png" class="card-img-top mx-auto w-50" alt="node.js">
 						<div class="card-body">
-							<h5 class="card-title">What is Node.js?</h5>
+							<h5 class="card-title text-uppercase">What is Node.js?</h5>
 							<p class="card-text">Node.js lets developers use JavaScript to write command line tools and for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user's web browser.</p>
 							<a href="#" class="btn btn-secondary">Read more</a>
 						</div>
@@ -335,7 +333,7 @@
 						<div class="card h-100">
 							<img src="img/cloud.png" class="card-img-top mx-auto w-50" alt="cloud">
 							<div class="card-body">
-								<h5 class="card-title">Cloud Server Hosting</h5>
+								<h5 class="card-title text-uppercase">Cloud Server Hosting</h5>
 								<p class="card-text">Cloud hosting makes applications and websites accessible using cloud resources and ensure greater flexibility and scalability.</p>
 								<a href="#" class="btn btn-secondary">Read more</a>
 							</div>
@@ -350,7 +348,7 @@
 						<div class="card h-100">
 							<img src="img/github.png" class="card-img-top mx-auto w-50" alt="github">
 							<div class="card-body">
-								<h5 class="card-title">GitHub Pages</h5>
+								<h5 class="card-title text-uppercase">GitHub Pages</h5>
 								<p class="card-text">Websites for you and your projects.Hosted directly from your GitHub repository. Just edit, push, and your changes are live.</p>
 								<a href="#" class="btn btn-secondary">Read more</a>
 							</div>
@@ -360,28 +358,26 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> <!-- div/ row -->
 		</div> <!-- div/ container -->
 	</section>
 
 	<footer class="bg-dark">
 		<div class="container-fluid">
-			<div class="row">
-				<div class="col-lg-6">	
+			<div class="row justify-content-left">
+				<div class="col-lg-6 py-2">	
 					<div class="text-white fs-6 navbar-brand d-inline-block">
 					© 2021 Copyright |
 						<a class="text-white text-decoration-none fs-6" href="https://mdbootstrap.com/">m-gaia.com</a>
-					</div>
 				</div>
-			<div class="row">
-				<div class="col-lg-6 py-3">
+				<div class="col-lg-6 py-2">
 					<a href="#"><i class="bi bi-github"></i></a>
 					<a href="#"><i class="bi bi-linkedin"></i></a>
-					<a href="#"><i class="bi bi-facebook"></i></a>
 					<a href="#"><i class="bi bi-instagram"></i></a>
 					<a href="#"><i class="bi bi-twitter"></i></a>
-				</div>			
-			</div>	
+					<button type="button" class="btn btn-sm btn-outline-dark bg-primary py-1 my-3 mx-0 rounded-pill border-2 text-uppercase text-white" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"><strong>Hire me</strong></button>
+				</div>
+			</div>
 		</div>
 	</footer>	
 
@@ -419,15 +415,17 @@
 		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalCenteredScrollableTitle">Titulo modal</h5>
+					<h5 class="modal-title" id="exampleModalCenteredScrollableTitle">Title modal</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente in quaerat earum dignissimos quae quo reprehenderit, velit quos, provident ea alias sequi voluptatibus magni quam nulla facilis quibusdam veniam rem!</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente in quaerat earum dignissimos quae quo reprehenderit, velit quos, provident ea alias sequi voluptatibus magni quam nulla facilis quibusdam veniam rem!</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente in quaerat earum dignissimos quae quo reprehenderit, velit quos, provident ea alias sequi voluptatibus magni quam nulla facilis quibusdam veniam rem!</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente in quaerat earum dignissimos quae quo reprehenderit, velit quos, provident ea alias sequi voluptatibus magni quam nulla facilis quibusdam veniam rem!</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente in quaerat earum dignissimos quae quo reprehenderit, velit quos, provident ea alias sequi voluptatibus magni quam nulla facilis quibusdam veniam rem!</p>
+					<p>Lorem ipsum dolor sit amet</p>
+					<p>Lorem ipsum dolor sit amet</p>
+					<p>Lorem ipsum dolor sit amet</p>
+					<p>Lorem ipsum dolor sit amet</p>
+					<p>Lorem ipsum dolor sit amet</p>
+					<p>Lorem ipsum dolor sit amet</p>
+					<p>Lorem ipsum dolor sit amet</p>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 				</div>
